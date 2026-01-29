@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>📊 Dashboard</h3>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card p-3 text-center">
+      <h5>Total Bookings</h5>
+      <h2>{{ bookings }}</h2>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3 text-center">
+      <h5>Total Earnings</h5>
+      <h2>₹{{ earnings }}</h2>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

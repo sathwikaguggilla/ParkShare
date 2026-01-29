@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Search Parking Area</h3>
+
+<form method="post">
+  <input name="area" class="form-control mb-2" placeholder="Market, Mall, Bus" required>
+  <button class="btn btn-primary">Search</button>
+</form>
+
+{% if message %}
+<div class="alert alert-{{ color }} mt-3">{{ message }}</div>
+{% endif %}
+
+{% for s in spots %}
+<div class="card p-3 mt-2">
+  <h5>📍 {{ s[1] }}</h5>
+  <p>₹{{ s[2] }}/hr | Slots: {{ s[3] }}</p>
+  <a href="/book/{{ s[0] }}" class="btn btn-success">Book</a>
+</div>
+{% endfor %}
+
+{% endblock %}
+

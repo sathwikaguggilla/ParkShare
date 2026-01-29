@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Add Parking Space</h3>
+
+<form method="post">
+  <input name="location" class="form-control mb-2" placeholder="Location" required>
+  <input name="rate" type="number" class="form-control mb-2" placeholder="Rate" required>
+  <input name="slots" type="number" class="form-control mb-2" placeholder="Slots" required>
+  <button class="btn btn-success">Add Space</button>
+</form>
+
+{% endblock %}
