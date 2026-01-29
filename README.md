@@ -1,5 +1,5 @@
 # ParkShare
-Community Parking ; Traffic Routing System
+
 Community Parking & Traffic Routing System
 
 ParkShare is a web-based application that helps solve urban parking problems by connecting drivers with hosts (property owners) who have available parking spaces.
